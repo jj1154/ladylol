@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#auction-info {
+    margin: 20px 0;
+}
+
+#upload-section {
+    margin-top: 20px;
+}
+
+#file-upload {
+    margin: 10px;
+}
+
+#participants-list {
+    margin-top: 30px;
+}
+
+#participants-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#participants-list ul li {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#participants-list ul li.sold {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대회 참가자 및 포인트 목록</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>대회 참가자 및 포인트 목록</h1>
+
+    <!-- 이미지 추가 -->
+    <div id="image-section">
+        <img src="1.jpg" alt="참가자 이미지" id="participant-image" />
+    </div>
+
+    <div id="upload-section">
+        <input type="file" id="file-upload" accept=".xlsx">
+        <button id="load-participants">참가자 명단 불러오기</button>
+    </div>
+
+    <!-- 관리자 인증 섹션 -->
+    <div id="admin-section">
+        <input type="password" id="admin-password" placeholder="관리자 비밀번호 입력">
+        <button id="admin-login">관리자 로그인</button>
+        <p id="admin-status">관리자: 로그아웃 상태</p>
+    </div>
+
+    <div id="participants-list">
+        <h2>참가자 목록</h2>
+        <ul id="participants">
+            <!-- 엑셀 파일에서 참가자 명단을 불러옵니다. -->
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
